@@ -7,7 +7,7 @@ public class Pojistenec {
     private int telCislo;
 
     //Konstruktor
-    public Pojistenec(int id,String jmeno, String prijmeni, int vek, int telCislo) {
+    public Pojistenec(String jmeno, String prijmeni, int vek, int telCislo) {
         this.id = last_id++;
         this.jmeno = jmeno;
         this.prijmeni = prijmeni;
@@ -35,6 +35,6 @@ public class Pojistenec {
     //Výpis pojištěnce
     @Override
     public String toString() {
-        return jmeno + "\t" + prijmeni + "\t" + vek + "\t" + telCislo;
+        return id + "\t" + jmeno + "\t" + prijmeni + "\t" + vek + "\t" + telCislo;
     }
 }

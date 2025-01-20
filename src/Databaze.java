@@ -10,17 +10,13 @@ public class Databaze {
     }
 
     // Přídání pojištěnce
-    public void pridejPojistence(int id, String jmeno, String prijmeni,int vek, int telCislo){
-        pojistenci.add(new Pojistenec(Pojistenec.last_id,jmeno,prijmeni,vek,telCislo));
+    public void pridejPojistence(String jmeno, String prijmeni,int vek, int telCislo){
+        pojistenci.add(new Pojistenec(jmeno,prijmeni,vek,telCislo));
     }
 
     //Metoda s návratovým arraylistem všech pojištěnců
-    public ArrayList<Pojistenec> vypisPojistence() {
-        ArrayList<Pojistenec> nalezene = new ArrayList<>();
-        for (Pojistenec pojistenec : pojistenci) {
-            System.out.println(pojistenec);
-        }
-        return nalezene;
+    public ArrayList<Pojistenec> vratPojistence() {
+        return pojistenci;
     }
 
     //Metoda s návratovým arraylistem všech pojištěnců který odpovídají vstupu jména a příjmení
