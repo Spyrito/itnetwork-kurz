@@ -117,6 +117,7 @@ public class Evidence {
         System.out.println("--------------------------");
         System.out.println();
     }
+    
     public void vypisMenu(){
         System.out.println("Vyberte si akci:");
         System.out.println("1 - Přidat nového pojištěného");

@@ -35,6 +35,9 @@ public class Pojistenec {
     //Výpis pojištěnce
     @Override
     public String toString() {
-        return id + "\t" + jmeno + "\t" + prijmeni + "\t" + vek + "\t" + telCislo;
+        return String.format(
+                "ID: %d | Jméno: %-10s | Příjmení: %-10s | Věk: %3d | Tel: %d",
+                id, jmeno, prijmeni, vek, telCislo
+        );
     }
 }
