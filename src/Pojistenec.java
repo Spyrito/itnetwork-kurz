@@ -36,7 +36,7 @@ public class Pojistenec {
     @Override
     public String toString() {
         return String.format(
-                "ID: %d | Jméno: %-10s | Příjmení: %-10s | Věk: %3d | Tel: %d",
+                "ID: %d | Jméno: %s | Příjmení: %s | Věk: %d | Tel: %d",
                 id, jmeno, prijmeni, vek, telCislo
         );
     }
