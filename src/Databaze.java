@@ -24,7 +24,8 @@ public class Databaze {
     public ArrayList<Pojistenec> hledejPojistence(String jmeno, String prijmeni) {
         ArrayList<Pojistenec> nalezene = new ArrayList<>();
         for (Pojistenec pojistenec : pojistenci) {
-            if (pojistenec.getJmeno().toLowerCase().equals(jmeno) && pojistenec.getPrijmeni().toLowerCase().equals(prijmeni)){
+            if (pojistenec.getJmeno().toLowerCase().equals(jmeno.toLowerCase()) &&
+                    pojistenec.getPrijmeni().toLowerCase().equals(prijmeni.toLowerCase())) {
                 nalezene.add(pojistenec);
             }
         }
